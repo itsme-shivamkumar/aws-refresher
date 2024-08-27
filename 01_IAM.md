@@ -36,18 +36,19 @@
 ```
 
 ## MFA Devices
-- **Authenticator Apps**: Like Google Authenticator, Microsoft Authenticator, etc.
-- **Security Keys**: Like YubiKey or other FIDO keys.
-- **Hardware TOTP Tokens**: Physical devices that generate time-based codes.
+- **Authenticator Apps**: Examples include Google Authenticator, Microsoft Authenticator, Twilio Authy, Duo Mobile, Symantec VIP, LastPass Authenticator.
+- **Security Keys**: Physical devices like YubiKey or other FIDO-compliant security keys.
+- **Hardware TOTP Tokens**: Physical devices that generate time-based one-time passwords (TOTP).
+
 
 ## Accessing AWS
-- **AWS Management Console**: Secured with password + MFA.
-- **AWS CLI**: Open source, secured with an access key.
-- **AWS SDK**: Supports many platforms (Android, iOS, Python, JS, etc.); AWS CLI is built on the Python SDK.
+- **AWS Management Console**: Web-based interface secured with a password and MFA. Supports CloudShell for terminal access.
+- **AWS CLI**: Command-line tool, secured with an access key. [GitHub repository](https://github.com/aws/aws-cli).
+- **AWS SDK**: Software Development Kit supporting various platforms (e.g., Android, iOS, Python, JavaScript). The AWS CLI is built using the Python SDK.
 
 ## Roles
-- Give permissions to AWS services (like EC2, Lambda) using IAM Roles.
+- **IAM Roles**: Assign permissions to AWS services (e.g., EC2, Lambda) to perform actions on your behalf.
 
 ## IAM Security Tools
-- **IAM Credentials Report**: Lists all users and their credential statuses.
-- **IAM Access Advisor**: Shows when a user last used a service to help refine permissions.
+- **IAM Credentials Report**: Generates a report of all users in your account and their credential statuses.
+- **IAM Access Advisor**: Shows the last accessed times for services granted to a user, helping refine permissions to enforce the principle of least privilege.
